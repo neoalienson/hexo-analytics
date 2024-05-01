@@ -8,7 +8,7 @@ function run(config) {
     }
 
     // registers injector on all pages
-    hexo.extend.injector.register('head_end', injector(hexo));
+    hexo.extend.injector.register('head_begin', injector(hexo));
 }
 
 run(hexo.config.analytics);

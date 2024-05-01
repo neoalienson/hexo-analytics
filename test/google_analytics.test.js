@@ -5,7 +5,7 @@ beforeEach(() => {
     hexo = {
         config: {
             analytics: {
-                microsoft_clarity: {
+                google_analytics: {
                     enable: false
                 }
             }
@@ -14,26 +14,25 @@ beforeEach(() => {
 });
 
 
-test('When microsoft_clarity is disabled', () => {
+test('When google_analytics is disabled', () => {
     const res = require('../lib/analytics')(hexo)();
     expect(res).toBe('');
 });
 
-test('When project_id is not defined while microsoft_clarity is enabled', () => {
-    hexo.config.analytics.microsoft_clarity = {
+test('When measurement_id is not defined while google_analytics is enabled', () => {
+    hexo.config.analytics.google_analytics = {
         enable: true
     };
     expect(require('../lib/analytics')(hexo)).toThrow();
 });
 
-test('When project_id is defined while microsoft_clarity is enabled', () => {
-    hexo.config.analytics.microsoft_clarity = {
+test('When measurement_id is defined while google_analytics is enabled', () => {
+    hexo.config.analytics.google_analytics = {
         enable: true,
-        project_id: "projectidabc"
+        measurement_id: "measurementidabc"
     };
 
     const res = require('../lib/analytics')(hexo)();
     const scriptElement = htmlParser.parse(res);
-
-    expect(scriptElement.firstChild.innerText).toContain("projectidabc");
+    expect(scriptElement.innerText).toContain("measurementidabc");
 });

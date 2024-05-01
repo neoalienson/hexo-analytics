@@ -26,5 +26,5 @@ test('When no analytics is defined', () => {
         }
     }
     const res = require('../lib/analytics')(hexo)();
-    expect(res).toBe(undefined);
+    expect(res).toBe('');
 });

@@ -1,5 +1,7 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/neoalienson/hexo-analytics)
+  
 # hexo-analytics
-A Hexo plugin to enable Google Analytics and Microsoft Clarity. Many themes provide analytics but using plugin decouple the capability from themes.
+A Hexo plugin to enable Google Analytics and Microsoft Clarity. Many theme provide sanalytics but using plugin decouple the capability from themes.
 
 ## Configurations
 

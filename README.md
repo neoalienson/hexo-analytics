@@ -1,5 +1,5 @@
 # hexo-analytics
-A Hexo plugin to enable Google Analytics and Microsoft Clarity. Many themes provide analytics but using plugin decouple the capability from theme.
+A Hexo plugin to enable Google Analytics and Microsoft Clarity. Many themes provide analytics but using plugin decouple the capability from themes.
 
 ## Configurations
 

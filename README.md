@@ -18,3 +18,7 @@ analytics:
         enable: true
         project_id: <your project id under Setting, Overview>
 ```
+
+## Contribution
+
+Keep it simple and stupid for now. Any pull request is welcomed and will reviewed.

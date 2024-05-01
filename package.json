@@ -1,10 +1,13 @@
 {
     "name": "hexo-analytics",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Integrate your Hexo blog with Google Analytics, Tag Manager and Microsft Clarity",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "release": "standard-version",
+        "release:minor": "standard-version --release-as minor",
+        "release:patch": "standard-version --release-as patch"
     },
     "repository": {
         "type": "git",
@@ -22,6 +25,7 @@
     "homepage": "https://github.com/neoalienson/hexo-analytics",
     "devDependencies": {
         "jest": "^29.7.0",
-        "node-html-parser": "^6.1.13"
+        "node-html-parser": "^6.1.13",
+        "standard-version": "^9.5.0"
     }
 }
